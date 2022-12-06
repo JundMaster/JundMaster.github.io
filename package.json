@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "dotenv": "^16.0.3",
-    "@notionhq/client": "^2.2.2"
+    "@notionhq/client": "^2.2.2",
+    "encoding": "^0.1.13"
   }
 }
