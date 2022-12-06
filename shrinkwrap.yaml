@@ -1,211 +1,103 @@
 dependencies:
-  node-engine: 0.0.5
+  '@notionhq/client': 2.2.2
+  dotenv: 16.0.3
 packages:
-  /@colors/colors/1.5.0:
+  /@notionhq/client/2.2.2:
+    dependencies:
+      '@types/node-fetch': 2.6.2
+      node-fetch: 2.6.7
     dev: false
     engines:
-      node: '>=0.1.90'
+      node: '>=12'
     resolution:
-      integrity: sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
-  /@dabh/diagnostics/2.0.3:
+      integrity: sha512-L7TB+UyhnWTSv1ek7xzGr9+mS9o76qMKnZ8Ag8H2q6QgvywAiPOFcE3ulWI/1AnMewGVRqwb30agPHMVRY/K/w==
+  /@types/node-fetch/2.6.2:
     dependencies:
-      colorspace: 1.1.4
-      enabled: 2.0.0
-      kuler: 2.0.0
+      '@types/node': 18.11.11
+      form-data: 3.0.1
     dev: false
     resolution:
-      integrity: sha512-hrlQOIi7hAfzsMqlGSFyVucrx38O+j6wiGOf//H2ecvIEqYN4ADBSS2iLMh5UFyDunCNniUIPk/q3riFv45xRA==
-  /async/3.2.4:
+      integrity: sha512-DHqhlq5jeESLy19TYhLakJ07kNumXWjcDdxXsLUMJZ6ue8VZJj4kLPQVE/2mdHh3xZziNF1xppu5lwmS53HR+A==
+  /@types/node/18.11.11:
     dev: false
     resolution:
-      integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==
-  /color-convert/1.9.3:
+      integrity: sha512-KJ021B1nlQUBLopzZmPBVuGU9un7WJd/W4ya7Ih02B4Uwky5Nja0yGYav2EfYIk0RR2Q9oVhf60S2XR1BCWJ2g==
+  /asynckit/0.4.0:
+    dev: false
+    resolution:
+      integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==
+  /combined-stream/1.0.8:
     dependencies:
-      color-name: 1.1.3
-    dev: false
-    resolution:
-      integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
-  /color-name/1.1.3:
-    dev: false
-    resolution:
-      integrity: sha512-72fSenhMw2HZMTVHeCA9KCmpEIbzWiQsjN+BHcBbS9vr1mtt+vJjPdksIBNUmKAW8TFUDPJK5SUU3QhE9NEXDw==
-  /color-name/1.1.4:
-    dev: false
-    resolution:
-      integrity: sha512-dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==
-  /color-string/1.9.1:
-    dependencies:
-      color-name: 1.1.4
-      simple-swizzle: 0.2.2
-    dev: false
-    resolution:
-      integrity: sha512-shrVawQFojnZv6xM40anx4CkoDP+fZsw/ZerEMsW/pyzsRbElpsL/DBVW7q3ExxwusdNXI3lXpuhEZkzs8p5Eg==
-  /color/3.2.1:
-    dependencies:
-      color-convert: 1.9.3
-      color-string: 1.9.1
-    dev: false
-    resolution:
-      integrity: sha512-aBl7dZI9ENN6fUGC7mWpMTPNHmWUSNan9tuWN6ahh5ZLNk9baLJOnSMlrQkHcrfFgz2/RigjUVAjdx36VcemKA==
-  /colorspace/1.1.4:
-    dependencies:
-      color: 3.2.1
-      text-hex: 1.0.0
-    dev: false
-    resolution:
-      integrity: sha512-BgvKJiuVu1igBUF2kEjRCZXol6wiiGbY5ipL/oVPwm0BL9sIpMIzM8IK7vwuxIIzOXMV3Ey5w+vxhm0rR/TN8w==
-  /enabled/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-AKrN98kuwOzMIdAizXGI86UFBoo26CL21UM763y1h/GMSJ4/OHU9k2YlsmBpyScFo/wbLzWQJBMCW4+IO3/+OQ==
-  /fecha/4.2.3:
-    dev: false
-    resolution:
-      integrity: sha512-OP2IUU6HeYKJi3i0z4A19kHMQoLVs4Hc+DPqqxI2h/DPZHTm/vjsfC6P0b4jCMy14XizLBqvndQ+UilD7707Jw==
-  /fn.name/1.1.0:
-    dev: false
-    resolution:
-      integrity: sha512-GRnmB5gPyJpAhTQdSZTSp9uaPSvl09KoYcMQtsB9rQoOmzs9dH6ffeccH+Z+cv6P68Hu5bC6JjRh4Ah/mHSNRw==
-  /inherits/2.0.4:
-    dev: false
-    resolution:
-      integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
-  /is-arrayish/0.3.2:
-    dev: false
-    resolution:
-      integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==
-  /is-stream/2.0.1:
+      delayed-stream: 1.0.0
     dev: false
     engines:
-      node: '>=8'
+      node: '>= 0.8'
     resolution:
-      integrity: sha512-hFoiJiTl63nn+kstHGBtewWSKnQLpyb155KHheA1l39uvtO9nWIop1p3udqPcUd/xbF1VLMO4n7OI6p7RbngDg==
-  /kuler/2.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-Xq9nH7KlWZmXAtodXDDRE7vs6DU1gTU8zYDHDiWLSip45Egwq3plLHzPn27NgvzL2r1LMPC1vdqh98sQxtqj4A==
-  /logform/2.4.2:
-    dependencies:
-      '@colors/colors': 1.5.0
-      fecha: 4.2.3
-      ms: 2.1.3
-      safe-stable-stringify: 2.4.1
-      triple-beam: 1.3.0
-    dev: false
-    resolution:
-      integrity: sha512-W4c9himeAwXEdZ05dQNerhFz2XG80P9Oj0loPUMV23VC2it0orMHQhJm4hdnnor3rd1HsGf6a2lPwBM1zeXHGw==
-  /ms/2.1.3:
-    dev: false
-    resolution:
-      integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
-  /node-engine/0.0.5:
-    dependencies:
-      node-options: 0.0.7
-      q: 1.5.1
-      winston: 3.8.2
+      integrity: sha512-FQN4MRfuJeHf7cBbBMJFXhKSDq+2kAArBlmRBvcvFE5BB1HZKXtSFASDhdlz9zOYwxh8lDdnvmMOe/+5cdoEdg==
+  /delayed-stream/1.0.0:
     dev: false
     engines:
-      node: '>= 0.8.0'
-    hasBin: true
+      node: '>=0.4.0'
     resolution:
-      integrity: sha512-anOvmtY/8Vk5pP0BNTZnIIvrX7RaVamR4C1Tlz7s6sn04aYYMPpj8rfp0W/0/DrELfVunkAXq7RbDsfNzbJlVg==
-  /node-options/0.0.7:
+      integrity: sha512-ZySD7Nf91aLB0RxL4KGrKHBXl7Eds1DAmEdcoVawXnLD7SDhpNgtuII2aAkg7a7QS41jxPSZ17p4VdGnMHk3MQ==
+  /dotenv/16.0.3:
     dev: false
     engines:
-      node: '>= 0.6.0'
+      node: '>=12'
     resolution:
-      integrity: sha512-A+Zoq9JXgmtLWU0L/b4zcn83PJRD6BdOx9a4kQRM8IrKSCVmcn8/BwXpfM3GA7fdjcluB83npqLIiOqqrCswQw==
-  /one-time/1.0.0:
+      integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+  /form-data/3.0.1:
     dependencies:
-      fn.name: 1.1.0
-    dev: false
-    resolution:
-      integrity: sha512-5DXOiRKwuSEcQ/l0kGCF6Q3jcADFv5tSmRaJck/OqkVFcOzutB134KRSfF0xDrL39MNnqxbHBbUUcjZIhTgb2g==
-  /q/1.5.1:
-    dev: false
-    engines:
-      node: '>=0.6.0'
-      teleport: '>=0.2.0'
-    resolution:
-      integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
-  /readable-stream/3.6.0:
-    dependencies:
-      inherits: 2.0.4
-      string_decoder: 1.3.0
-      util-deprecate: 1.0.2
+      asynckit: 0.4.0
+      combined-stream: 1.0.8
+      mime-types: 2.1.35
     dev: false
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-BViHy7LKeTz4oNnkcLJ+lVSL6vpiFeX6/d3oSH8zCW7UxP2onchk+vTGB143xuFjHS3deTgkKoXXymXqymiIdA==
-  /safe-buffer/5.2.1:
-    dev: false
-    resolution:
-      integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
-  /safe-stable-stringify/2.4.1:
+      integrity: sha512-RHkBKtLWUVwd7SqRIvCZMEvAMoGUp0XU+seQiZejj0COz3RI3hWP4sCv3gZWWLjJTd7rGwcsF5eKZGii0r/hbg==
+  /mime-db/1.52.0:
     dev: false
     engines:
-      node: '>=10'
+      node: '>= 0.6'
     resolution:
-      integrity: sha512-dVHE6bMtS/bnL2mwualjc6IxEv1F+OCUpA46pKUj6F8uDbUM0jCCulPqRNPSnWwGNKx5etqMjZYdXtrm5KJZGA==
-  /simple-swizzle/0.2.2:
+      integrity: sha512-sPU4uV7dYlvtWJxwwxHD0PuihVNiE7TyAbQ5SWxDCB9mUYvOgroQOwYQQOKPJ8CIbE+1ETVlOoK1UC2nU3gYvg==
+  /mime-types/2.1.35:
     dependencies:
-      is-arrayish: 0.3.2
-    dev: false
-    resolution:
-      integrity: sha512-JA//kQgZtbuY83m+xT+tXJkmJncGMTFT+C+g2h2R9uxkYIrE2yy9sgmcLhCnw57/WSD+Eh3J97FPEDFnbXnDUg==
-  /stack-trace/0.0.10:
-    dev: false
-    resolution:
-      integrity: sha512-KGzahc7puUKkzyMt+IqAep+TVNbKP+k2Lmwhub39m1AsTSkaDutx56aDCo+HLDzf/D26BIHTJWNiTG1KAJiQCg==
-  /string_decoder/1.3.0:
-    dependencies:
-      safe-buffer: 5.2.1
-    dev: false
-    resolution:
-      integrity: sha512-hkRX8U1WjJFd8LsDJ2yQ/wWWxaopEsABU1XfkM8A+j0+85JAGppt16cr1Whg6KIbb4okU6Mql6BOj+uup/wKeA==
-  /text-hex/1.0.0:
-    dev: false
-    resolution:
-      integrity: sha512-uuVGNWzgJ4yhRaNSiubPY7OjISw4sw4E5Uv0wbjp+OzcbmVU/rsT8ujgcXJhn9ypzsgr5vlzpPqP+MBBKcGvbg==
-  /triple-beam/1.3.0:
-    dev: false
-    resolution:
-      integrity: sha512-XrHUvV5HpdLmIj4uVMxHggLbFSZYIn7HEWsqePZcI50pco+MPqJ50wMGY794X7AOOhxOBAjbkqfAbEe/QMp2Lw==
-  /util-deprecate/1.0.2:
-    dev: false
-    resolution:
-      integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==
-  /winston-transport/4.5.0:
-    dependencies:
-      logform: 2.4.2
-      readable-stream: 3.6.0
-      triple-beam: 1.3.0
+      mime-db: 1.52.0
     dev: false
     engines:
-      node: '>= 6.4.0'
+      node: '>= 0.6'
     resolution:
-      integrity: sha512-YpZzcUzBedhlTAfJg6vJDlyEai/IFMIVcaEZZyl3UXIl4gmqRpU7AE89AHLkbzLUsv0NVmw7ts+iztqKxxPW1Q==
-  /winston/3.8.2:
+      integrity: sha512-ZDY+bPm5zTTF+YpCrAU9nK0UgICYPT0QtT1NZWFv4s++TNkcgVaT0g6+4R2uI4MjQjzysHB1zxuWL50hzaeXiw==
+  /node-fetch/2.6.7:
     dependencies:
-      '@colors/colors': 1.5.0
-      '@dabh/diagnostics': 2.0.3
-      async: 3.2.4
-      is-stream: 2.0.1
-      logform: 2.4.2
-      one-time: 1.0.0
-      readable-stream: 3.6.0
-      safe-stable-stringify: 2.4.1
-      stack-trace: 0.0.10
-      triple-beam: 1.3.0
-      winston-transport: 4.5.0
+      whatwg-url: 5.0.0
     dev: false
     engines:
-      node: '>= 12.0.0'
+      node: 4.x || >=6.0.0
+    peerDependencies:
+      encoding: ^0.1.0
     resolution:
-      integrity: sha512-MsE1gRx1m5jdTTO9Ld/vND4krP2To+lgDoMEHGGa4HIlAUyXJtfc7CxQcGXVyz2IBpw5hbFkj2b/AtUdQwyRew==
+      integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
+  /tr46/0.0.3:
+    dev: false
+    resolution:
+      integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+  /webidl-conversions/3.0.1:
+    dev: false
+    resolution:
+      integrity: sha512-2JAn3z8AR6rjK8Sm8orRC0h/bcl/DqL7tRPdGZ4I1CjdF+EaMLmYxBHyXuKL849eucPFhvBoxMsflfOb8kxaeQ==
+  /whatwg-url/5.0.0:
+    dependencies:
+      tr46: 0.0.3
+      webidl-conversions: 3.0.1
+    dev: false
+    resolution:
+      integrity: sha512-saE57nupxk6v3HY35+jzBwYa0rKSy0XR8JSxZPwgLr7ys0IBzhGviA1/TUGJLmSVqs8pb9AnvICXEuOHLprYTw==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  node-engine: ^0.0.5
+  '@notionhq/client': ^2.2.2
+  dotenv: ^16.0.3
