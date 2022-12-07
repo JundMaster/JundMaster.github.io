@@ -60,7 +60,13 @@ const getLocations = async () => {
       tempoLocationInfo.push(
         {
           info_type: tempBlock[j].type,
-          info_content: tempBlock[j][tempBlock[j].type].rich_text[0].plain_text
+          info_content: () => {
+            try {
+              return tempBlock[j][tempBlock[j].type].rich_text[0].plain_text
+            } catch (error) {
+              return "this has an error"
+            }
+          }
         }
       )
     }
