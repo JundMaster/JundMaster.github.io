@@ -2,7 +2,7 @@ const locationsElement = document.querySelector('#locations');
 
 const getLocationsFromBackend = async () => {
 
-    const res = await fetch ("http://localhost:8080/silverymoonPoints")
+    const res = await fetch ("silverymoonPoints")
     const data = await res.json();
     return data
 }
