@@ -114,12 +114,17 @@ const getLocations = async () => {
 })()
 
 const express = require('express');
+const APP_PORT = 8000;
 const PORT = process.env.PORT || 8080;
 const app = express();
+const debug = require('debug')('node-js-sample:server');
+const http = require('http');
 
+app.set('port', PORT);
 app.use(express.static("public"));
 
-app.listen(PORT, console.log("Server started at port " + PORT));
+// app.listen(APP_PORT, console.log("Server started at port " + APP_PORT));
+
 app.get("/silverymoonPoints", async (req,res) => {
   const silverymoonPoints = await getLocations();
   res.json(silverymoonPoints);
@@ -128,4 +133,46 @@ app.get("/silverymoonPoints", async (req,res) => {
 app.get("/", async (req, res) => {
   res.send("Hello World");
 })
+
+var server = http.createServer(app);
+server.listen(PORT)
+server.on('error', onError);
+server.on('listening', onListening);
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+
+  var bind = typeof PORT === 'string'
+    ? 'Pipe ' + PORT
+    : 'Port ' + PORT;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+/**
+ * Event listener for HTTP server "listening" event.
+ */
+
+function onListening() {
+  var addr = server.address();
+  var bind = typeof addr === 'string'
+    ? 'pipe ' + addr
+    : 'port ' + addr.PORT;
+  debug('Listening on ' + bind);
+}
+
 module.exports = {randomVar, Pudim, test};
