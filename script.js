@@ -57,16 +57,16 @@ const getLocations = async () => {
     
     var tempoLocationInfo = [];
     for (var j = 0; j < tempBlock.length; j++){
+      var auxVar;
+      try {
+        auxVar = tempBlock[j][tempBlock[j].type].rich_text[0].plain_text;
+      } catch (error) {
+        auxVar = "empty";
+      }
       tempoLocationInfo.push(
         {
           info_type: tempBlock[j].type,
-          info_content: () => {
-            try {
-              return tempBlock[j][tempBlock[j].type].rich_text[0].plain_text
-            } catch (error) {
-              return "this has an error"
-            }
-          }
+          info_content: auxVar
         }
       )
     }
