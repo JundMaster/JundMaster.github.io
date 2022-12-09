@@ -4,6 +4,7 @@
   "requires": true,
   "packages": {
     "": {
+      "name": "florentine-gifted-streetcar",
       "dependencies": {
         "@notionhq/client": "^2.2.2",
         "dotenv": "^16.0.3",
