@@ -9,11 +9,26 @@
       "UnauthRoleName": "amplify-amplify2600c9ade6a04-staging-14422-unauthRole",
       "StackName": "amplify-amplify2600c9ade6a04-staging-14422",
       "StackId": "arn:aws:cloudformation:eu-west-2:659110519285:stack/amplify-amplify2600c9ade6a04-staging-14422/01786b10-7763-11ed-8659-029ed103ccd4",
-      "AmplifyAppId": "d3e8tt1kqm8cxv"
+      "AmplifyAppId": "d3e8tt1kqm8cxv",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-amplify2600c9ade6a04-staging-14422-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "function": {
-        "testfunction": {}
+        "testfunction": {},
+        "silverymoonmapf3e553cf": {
+          "deploymentBucketName": "amplify-amplify2600c9ade6a04-staging-14422-deployment",
+          "s3Key": "amplify-builds/silverymoonmapf3e553cf-2b464a2f522f47614d66-build.zip"
+        },
+        "pudim": {
+          "deploymentBucketName": "amplify-amplify2600c9ade6a04-staging-14422-deployment",
+          "s3Key": "amplify-builds/pudim-55676431413058483061-build.zip"
+        }
+      },
+      "auth": {
+        "silverymoonmap": {}
+      },
+      "api": {
+        "silverymoonmaplabel": {}
       }
     }
   }
